@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма записи на посещение</title>
+</head>
+<body>
+    <header>
+      <h1>Форма записи на посещение мероприятия</h1>
+    </header>
+    <main>
+      <form method="post">
+        {% csrf_token%}
+        <h3>Информация для пропуска</h3>
+        <label>Срок действия для прропуска</label>
+        <input type="date" id="Visit_date" name="visit_date" required><br><br>
+        <label>Цель посещения</label>
+        <label>(soon)</label><br><br>
+
+        <h3>Информация о посетителе</h3>
+        <label for="visitor_first_name">Имя*:</label>
+        <input type="text" id="visitor_first_name" name="visitor_first_name" required><br><br>
+
+        <label for="visitor_last_name">Фамилия*:</label>
+        <input type="text" id="visitor_last_name" name="visitor_last_name" required><br><br>
+
+        <label for="visitor_middle_name">Отчество:</label>
+        <input type="text" id="visitor_middle_name" name="visitor_middle_name"><br><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="number" id="phone" name="phone" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="deport_id">Организация:</label>
+        <input type="text" id="deport_id" name="deport_id" required><br><br>
+
+        <label for="note">Примечания</label>
+        <input type="text" id="note" name="note"><br><br>
+
+        <label for="birth_date">Дата рождения:</label>
+        <input type="date" id="birth_date" name="birth_date" required><br><br>
+
+        <label for="passport_series">Серия:</label>
+        <input type="number" id="passport_series" name="passport_series" required><br><br>
+
+        <label for="passport_number">Номер:</label>
+        <input type="number" id="passport_number" name="passport_number" required><br><br>
+
+        <h3>Принимающая сторона</h3>
+        <label for="department_id">Подразделения*:</label>
+        <input type="text" id="department_id" name="department_id"><br>
+
+        <label for="employee_id">ФИО:</label>
+        <input type="text" id="employee_id" name="employee_id"><br><br>
+
+        <h3>Прикрепляемые документы</h3>
+        <label for="file">Прикрепить файл</label>
+        <input type="file" id="file" name="file">
+
+        <button type="submit">Отправить заявку</button>
+        <button type="reset">Очистить заявку</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy 2025</p>
+    </footer>
+</body>
+</html>

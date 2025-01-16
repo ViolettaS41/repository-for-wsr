@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    margin: 5px;
+    padding: 10px;
+}
+
+header{
+    padding: 20px;
+    text-alight: center;
+}
+
+footer{
+    text-alight: center;
+    position: fixed;
+}
+
+form{
+    padding: 20px;
+    margin: 20px;
+}
+
+button{
+    padding: 10px 15px;
+
+}
